@@ -6,7 +6,7 @@ Standardized ISO 2D engineering drawing resources for **Southern Engineering Co.
 
 | File | Description |
 | :--- | :--- |
-| `Seco_master_ISO.dwt` | Clean, audited AutoCAD 2018+ metric drawing template (`A0`–`A4`) for direct manual drafting in AutoCAD. |
+| `Seco_master_ISO.dwt` | Clean, audited AutoCAD 2018+ metric drawing template with **10 ISO layouts**: Landscape default (`A0`–`A4`) and Portrait (`A0-P`–`A4-P`) for direct manual drafting in AutoCAD. |
 | `seco-engineering-drawings.zip` | Complete, portable **Antigravity skill** for automated, standards-verified 2D engineering drawing generation (`DWG`, `DXF`, and monochrome `PDF`) from plain engineering specs, reference CAD files, or 3D `.step` / `.stp` models. |
 
 ---
@@ -17,8 +17,8 @@ Copy `Seco_master_ISO.dwt` into your AutoCAD Templates folder (e.g., `%LOCALAPPD
 
 ### What Is Preconfigured
 - **ISO Metric Database:** `$INSUNITS = 4` (mm), `$MEASUREMENT = 1` (metric `acadiso.lin` / `acadiso.pat`), `$PSLTSCALE = 1`, `$LTSCALE = 1.0`, clean empty Model Space, `0` AutoCAD `AUDIT` errors.
-- **Sheets (`A0`–`A4` Landscape):** Full-bleed `DWG To PDF.pc3` + `monochrome.ctb` with *Plot Object Lineweights* enabled and normalized `(0, 0)` sheet origins.
-- **Editable Attributed Title Blocks (`SECO_TBLOCK_A0`–`A4`):** Double-click any title-block attribute to fill `CLIENT`, `PROJECT`, `SITE`, `COUNTRY`, `PROJECT_NO`, `DRG_NO`, `SHEET`, `SCALE`, `TITLE`, `SUBTITLE`, `REF_DRG`, sign-offs, revision row, and `NOTE_1`–`NOTE_5`.
+- **Sheets (`A0`–`A4` Landscape default + `A0-P`–`A4-P` Portrait):** Full-bleed `DWG To PDF.pc3` + `monochrome.ctb` with *Plot Object Lineweights* enabled and normalized `(0, 0)` sheet origins. Active default layout is `A3` Landscape; portrait layouts (`A0-P` through `A4-P`) are ready on demand (`standard.orientation: portrait` in skill specs).
+- **Editable Attributed Title Blocks (`SECO_TBLOCK_A0`–`A4` & `SECO_TBLOCK_A0-P`–`A4-P`):** Double-click any title-block attribute to fill `CLIENT`, `PROJECT`, `SITE`, `COUNTRY`, `PROJECT_NO`, `DRG_NO`, `SHEET`, `SCALE`, `TITLE`, `SUBTITLE`, `REF_DRG`, sign-offs, revision row, and `NOTE_1`–`NOTE_5`.
 - **Always-Colored Corporate Logos:** Both the **Red & Green SECO emblem** (`SECO_LOGO`) and the **Orange & Gray SGS ISO 9001 badge** (`SECO_ISO9001_BADGE`) use 24-bit TrueColor vector fills so they always plot in full corporate color even under `monochrome.ctb`, while all engineering geometry plots strictly monochrome black-on-white.
 - **Projection Symbol:** ISO 5456-2 First-Angle (`ISO_PROJ_FIRST`, default) and Third-Angle (`ISO_PROJ_THIRD`) blocks included.
 - **Typography & Dimensioning:** ISO 3098 text style (`ISO_TEXT` using `isocpeur.ttf`) and ISO 129-1 associative dimension style (`SECO_ISO_MM`, `2.5 mm` plotted text/arrow height, trailing zeros suppressed, `BYLAYER`).
